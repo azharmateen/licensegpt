@@ -1,0 +1,37 @@
+{
+  "name": "licensegpt",
+  "version": "1.0.0",
+  "description": "Dependency license checker with plain-English decisions and evidence",
+  "main": "src/index.js",
+  "bin": {
+    "licensegpt": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "license",
+    "compliance",
+    "dependency",
+    "sbom",
+    "spdx",
+    "scanner",
+    "audit"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "glob": "^10.3.0",
+    "ora": "^5.4.1",
+    "spdx-license-ids": "^3.0.0",
+    "spdx-satisfies": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "openai": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
